@@ -1,0 +1,33 @@
+body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #0a0a0a; color: #e0f7ff; }
+
+header { background: #0f0f1a; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+
+header h1 { margin: 0; color: #00bcd4; font-size: 28px; }
+
+nav a { color: #e0f7ff; margin-left: 20px; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+
+nav a:hover { color: #00bcd4; }
+
+.hero { position: relative; text-align: center; }
+
+.hero img { width: 100%; max-height: 450px; object-fit: cover; opacity: 0.7; }
+
+.hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 15px; }
+
+.tentang, .media, .galeri { padding: 40px 20px; max-width: 900px; margin: auto; }
+
+.tentang h2, .media h2, .galeri h2 { color: #00bcd4; border-bottom: 2px solid #00bcd4; padding-bottom: 10px; margin-bottom: 20px; }
+
+.sosial a { display: inline-block; margin: 10px 15px; padding: 10px 15px; background: #121e2b; color: #00bcd4; border-radius: 10px; text-decoration: none; transition: all 0.3s; }
+
+.sosial a:hover { background: #00bcd4; color: #000; }
+
+.galeri .gambar { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+
+.galeri img { width: 280px; height: 160px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.6); transition: transform 0.3s ease; }
+
+.galeri img:hover { transform: scale(1.05); }
+
+footer { text-align: center; padding: 20px; background: #0f0f1a; color: #888; font-size: 14px; margin-top: 40px; }
+
+
