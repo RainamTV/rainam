@@ -60,12 +60,6 @@ nav {
 nav a {
   margin-right: 1.2rem;
   font-weight: 500;
-  transition: color 0.3s, transform 0.3s;
-}
-
-nav a:hover {
-  color: #21618c;
-  transform: scale(1.05); /* Tambah efek zoom */
 }
 
 /* Hero Section */
@@ -140,12 +134,11 @@ h2 {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s;
 }
 
 .sosial a:hover {
   background-color: #d0d0d0;
-  transform: scale(1.03); /* Tambah efek zoom */
 }
 
 /* Galeri */
@@ -190,31 +183,4 @@ footer {
   color: #777;
   margin-top: 2rem;
   animation: fadeIn 1.2s ease forwards;
-}
-
-/* Efek Scroll Animasi */
-.scroll-animation {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: scrollAnimation 1s ease-out forwards;
-}
-
-@keyframes scrollAnimation {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Gunakan kelas scroll-animation pada elemen yang ingin diberikan animasi */
-.hero-text,
-.tentang,
-.media,
-.galeri,
-.musik,
-footer {
-  /* Tambahkan class scroll-animation */
-  /* Gunakan kelas "scroll-animation" pada elemen yang ingin diberikan animasi */
-  /* Contoh: <section class="scroll-animation tentang"> */
-  /* Atau <div class="scroll-animation media"> */
 }
