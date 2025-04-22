@@ -146,3 +146,18 @@ footer {
     transform: translateY(0);
   }
 }
+/* Tambahan fix */
+body {
+  background-color: #fff; /* Warna dasar putih */
+  color: #222; /* Warna teks utama */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.gambar img {
+  width: 250px; /* Atur lebar tetap */
+  height: auto;
+}
