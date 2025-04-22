@@ -97,26 +97,5 @@
   });
 </script>
 
-<div class="modal" id="modal">
-  <img id="modal-img" src="" alt="Preview">
-</div>
-
-<script>
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img');
-  const galeriImgs = document.querySelectorAll('.gambar img');
-
-  galeriImgs.forEach(img => {
-    img.addEventListener('click', () => {
-      modalImg.src = img.src;
-      modal.classList.add('active');
-    });
-  });
-
-  modal.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-</script>
-
 </body>
 </html>
