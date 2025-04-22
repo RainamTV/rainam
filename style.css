@@ -1,45 +1,23 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
-  /* Background color */
-  background-color: #f0f0f0; /* Example background color */
+  background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
 }
-
-/* Animasi fade-in */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Link */
 a {
   text-decoration: none;
-  color: #3498db; /* Example text color */
+  color: #3498db;
   transition: color 0.3s;
 }
-
 a:hover {
   color: #21618c;
 }
-
-/* Header & Navigasi */
 header {
   background-color: #fff;
   padding: 1.5rem 2rem;
@@ -48,34 +26,22 @@ header {
   top: 0;
   z-index: 999;
 }
-
 header h1 {
   font-size: 2rem;
   color: #222;
 }
-
 nav {
   margin-top: 0.5rem;
 }
-
 nav a {
   margin-right: 1.2rem;
   font-weight: 500;
-  transition: color 0.3s, transform 0.3s;
 }
-
-nav a:hover {
-  color: #21618c;
-  transform: scale(1.05); /* Tambah efek zoom */
-}
-
-/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-
 .hero img {
   width: 100%;
   height: auto;
@@ -83,7 +49,6 @@ nav a:hover {
   filter: brightness(0.7);
   animation: zoomFade 6s ease-in-out infinite alternate;
 }
-
 @keyframes zoomFade {
   from {
     transform: scale(1);
@@ -94,7 +59,6 @@ nav a:hover {
     filter: brightness(0.5);
   }
 }
-
 .hero-text {
   position: absolute;
   top: 50%;
@@ -103,39 +67,30 @@ nav a:hover {
   color: #fff;
   animation: fadeIn 2s ease forwards;
 }
-
 .hero-text h2 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
-
 .hero-text p {
   font-size: 1.3rem;
 }
-
-/* Section */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
-
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
   color: #444;
 }
-
-/* Sosial Media */
 .sosial {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  animation: fadeIn 1.5s ease forwards;
 }
-
 .sosial a {
   background-color: #eaeaea;
   padding: 0.5rem 1rem;
@@ -143,46 +98,34 @@ h2 {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
-
 .sosial a:hover {
   background-color: #d0d0d0;
-  transform: scale(1.03); /* Tambah efek zoom */
+  transform: scale(1.03);
 }
-
-/* Galeri */
 .gambar {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  animation: fadeIn 1.5s ease forwards;
 }
-
 .gambar img {
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s;
 }
-
 .gambar img:hover {
   transform: scale(1.03);
 }
-
-/* Lagu */
 .lagu {
   margin-bottom: 2rem;
   text-align: center;
-  animation: fadeIn 1.2s ease forwards;
 }
-
 audio {
   margin-top: 0.5rem;
   width: 100%;
   max-width: 500px;
 }
-
-/* Footer */
 footer {
   background-color: #f5f5f5;
   padding: 1rem;
@@ -190,32 +133,16 @@ footer {
   font-size: 0.9rem;
   color: #777;
   margin-top: 2rem;
-  animation: fadeIn 1.2s ease forwards;
 }
-
-/* Efek Scroll Animasi */
+/* Animasi */
 .scroll-animation {
   opacity: 0;
   transform: translateY(20px);
   animation: scrollAnimation 1s ease-out forwards;
 }
-
 @keyframes scrollAnimation {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-/* Gunakan kelas scroll-animation pada elemen yang ingin diberikan animasi */
-.hero-text,
-.tentang,
-.media,
-.galeri,
-.musik,
-footer {
-  /* Tambahkan class scroll-animation */
-  /* Gunakan kelas "scroll-animation" pada elemen yang ingin diberikan animasi */
-  /* Contoh: <section class="scroll-animation tentang"> */
-  /* Atau <div class="scroll-animation media"> */
 }
