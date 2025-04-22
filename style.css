@@ -1,65 +1,220 @@
-body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #0a0a0a; color: #e0f7ff; }
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-header { background: #0f0f1a; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
 
-header h1 { margin: 0; color: #00bcd4; font-size: 28px; }
+/* Animasi fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
 
-nav a { color: #e0f7ff; margin-left: 20px; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-nav a:hover { color: #00bcd4; }
+/* Link */
+a {
+  text-decoration: none;
+  color: #3498db;
+  transition: color 0.3s;
+}
 
-.hero { position: relative; text-align: center; }
+a:hover {
+  color: #21618c;
+}
 
-.hero img { width: 100%; max-height: 450px; object-fit: cover; opacity: 0.7; }
+/* Header & Navigasi */
+header {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-.hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 15px; }
+header h1 {
+  font-size: 2rem;
+  color: #222;
+}
 
-.tentang, .media, .galeri { padding: 40px 20px; max-width: 900px; margin: auto; }
+nav {
+  margin-top: 0.5rem;
+}
 
-.tentang h2, .media h2, .galeri h2 { color: #00bcd4; border-bottom: 2px solid #00bcd4; padding-bottom: 10px; margin-bottom: 20px; }
+nav a {
+  margin-right: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
 
-.sosial a { display: inline-block; margin: 10px 15px; padding: 10px 15px; background: #121e2b; color: #00bcd4; border-radius: 10px; text-decoration: none; transition: all 0.3s; }
+nav a:hover {
+  color: #21618c;
+  transform: scale(1.05); /* Tambah efek zoom */
+}
 
-.sosial a:hover { background: #00bcd4; color: #000; }
-
-.galeri .gambar { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
-
-.galeri img { width: 280px; height: 160px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.6); transition: transform 0.3s ease; }
-
-.galeri img:hover { transform: scale(1.05); }
-
-footer { text-align: center; padding: 20px; background: #0f0f1a; color: #888; font-size: 14px; margin-top: 40px; }
-
-.musik {
-  background-color: #0f172a;
-  padding: 40px 20px;
-  color: #fff;
+/* Hero Section */
+.hero {
+  position: relative;
   text-align: center;
+  overflow: hidden;
 }
 
-.musik h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #38bdf8;
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.7);
+  animation: zoomFade 6s ease-in-out infinite alternate;
 }
 
-.lagu {
-  background-color: #1e293b;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+@keyframes zoomFade {
+  from {
+    transform: scale(1);
+    filter: brightness(0.7);
+  }
+  to {
+    transform: scale(1.05);
+    filter: brightness(0.5);
+  }
 }
 
-.lagu p {
-  margin-bottom: 10px;
-  font-size: 18px;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  animation: fadeIn 2s ease forwards;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+}
+
+/* Section */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #444;
+}
+
+/* Sosial Media */
+.sosial {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.sosial a {
+  background-color: #eaeaea;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sosial a:hover {
+  background-color: #d0d0d0;
+  transform: scale(1.03); /* Tambah efek zoom */
+}
+
+/* Galeri */
+.gambar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.gambar img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+}
+
+.gambar img:hover {
+  transform: scale(1.03);
+}
+
+/* Lagu */
+.lagu {
+  margin-bottom: 2rem;
+  text-align: center;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 audio {
+  margin-top: 0.5rem;
   width: 100%;
+  max-width: 500px;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 2rem;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Efek Scroll Animasi */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: scrollAnimation 1s ease-out forwards;
+}
+
+@keyframes scrollAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gunakan kelas scroll-animation pada elemen yang ingin diberikan animasi */
+.hero-text,
+.tentang,
+.media,
+.galeri,
+.musik,
+footer {
+  /* Tambahkan class scroll-animation */
+  /* Gunakan kelas "scroll-animation" pada elemen yang ingin diberikan animasi */
+  /* Contoh: <section class="scroll-animation tentang"> */
+  /* Atau <div class="scroll-animation media"> */
 }
