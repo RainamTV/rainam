@@ -6,8 +6,8 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #0a0a0a; /* Hitam pekat */
+  color: #cce7ff; /* Biru muda santai */
   line-height: 1.6;
 }
 a {
@@ -19,23 +19,22 @@ a:hover {
   color: #21618c;
 }
 header {
-  background-color: #fff;
+  background-color: #000;
   padding: 1.5rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 999;
 }
 header h1 {
   font-size: 2rem;
-  color: #222;
-}
-nav {
-  margin-top: 0.5rem;
+  color: #cce7ff; /* Biru santai */
 }
 nav a {
-  margin-right: 1.2rem;
-  font-weight: 500;
+  color: #8ecae6;
+}
+nav a:hover {
+  color: #219ebc;
 }
 .hero {
   position: relative;
@@ -92,15 +91,11 @@ h2 {
   flex-wrap: wrap;
 }
 .sosial a {
-  background-color: #eaeaea;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: #1d1d1d;
+  color: #cce7ff;
 }
 .sosial a:hover {
-  background-color: #d0d0d0;
-  transform: scale(1.03);
+  background-color: #333;
 }
 .gambar {
   display: flex;
@@ -109,9 +104,9 @@ h2 {
   justify-content: center;
 }
 .gambar img {
-  width: 300px;
+  width: 220px; /* Ukuran diperkecil */
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s;
 }
 .gambar img:hover {
