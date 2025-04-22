@@ -139,7 +139,12 @@ footer {
   font-size: 0.9rem;
   color: #111;
 }
-/* Animasi Slide Down */
+.slide-wrapper {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #add8e6;
+}
+
 @keyframes slideDown {
   from {
     transform: translateY(-50%);
@@ -153,5 +158,5 @@ footer {
 
 .slide-down {
   animation: slideDown 1.2s ease-out forwards;
-  opacity: 0; /* Supaya tidak muncul sebelum animasi jalan */
+  opacity: 0;
 }
