@@ -1,3 +1,4 @@
+/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
@@ -6,36 +7,43 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #0a0a0a; /* Hitam pekat */
-  color: #cce7ff; /* Biru muda santai */
+  background-color: #cce7ff; /* Biru santai */
+  color: #111; /* Hitam pekat */
   line-height: 1.6;
 }
+
+/* Link */
 a {
   text-decoration: none;
-  color: #3498db;
+  color: #0a58ca;
   transition: color 0.3s;
 }
 a:hover {
-  color: #21618c;
+  color: #003566;
 }
+
+/* Header */
 header {
-  background-color: #000;
+  background-color: #bde0fe;
   padding: 1.5rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 999;
 }
 header h1 {
   font-size: 2rem;
-  color: #cce7ff; /* Biru santai */
+  color: #000;
+}
+nav {
+  margin-top: 0.5rem;
 }
 nav a {
-  color: #8ecae6;
+  margin-right: 1.2rem;
+  font-weight: 500;
 }
-nav a:hover {
-  color: #219ebc;
-}
+
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
@@ -45,45 +53,38 @@ nav a:hover {
   width: 100%;
   height: auto;
   object-fit: cover;
-  filter: brightness(0.7);
-  animation: zoomFade 6s ease-in-out infinite alternate;
-}
-@keyframes zoomFade {
-  from {
-    transform: scale(1);
-    filter: brightness(0.7);
-  }
-  to {
-    transform: scale(1.05);
-    filter: brightness(0.5);
-  }
+  filter: brightness(0.85);
 }
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  animation: fadeIn 2s ease forwards;
+  color: #000;
+  text-shadow: 0 0 5px #fff;
 }
 .hero-text h2 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
 }
 .hero-text p {
   font-size: 1.3rem;
 }
+
+/* Section Umum */
 section {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
+  border-bottom: 2px solid #a1c4fd; /* Garis pemisah */
 }
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  color: #444;
+  color: #000;
 }
+
+/* Sosial Media */
 .sosial {
   display: flex;
   justify-content: center;
@@ -91,12 +92,16 @@ h2 {
   flex-wrap: wrap;
 }
 .sosial a {
-  background-color: #1d1d1d;
-  color: #cce7ff;
+  background-color: #e0f7fa;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .sosial a:hover {
-  background-color: #333;
+  background-color: #b2ebf2;
 }
+
+/* Galeri */
 .gambar {
   display: flex;
   gap: 1rem;
@@ -104,14 +109,16 @@ h2 {
   justify-content: center;
 }
 .gambar img {
-  width: 220px; /* Ukuran diperkecil */
+  width: 220px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 .gambar img:hover {
   transform: scale(1.03);
 }
+
+/* Lagu */
 .lagu {
   margin-bottom: 2rem;
   text-align: center;
@@ -121,38 +128,12 @@ audio {
   width: 100%;
   max-width: 500px;
 }
+
+/* Footer */
 footer {
-  background-color: #f5f5f5;
+  background-color: #bde0fe;
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #777;
-  margin-top: 2rem;
-}
-/* Animasi */
-.scroll-animation {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: scrollAnimation 1s ease-out forwards;
-}
-@keyframes scrollAnimation {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Tambahan fix */
-body {
-  background-color: #fff; /* Warna dasar putih */
-  color: #222; /* Warna teks utama */
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.gambar img {
-  width: 250px; /* Atur lebar tetap */
-  height: auto;
+  color: #111;
 }
