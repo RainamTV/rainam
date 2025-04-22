@@ -109,7 +109,9 @@ h2 {
   justify-content: center;
 }
 .gambar img {
-  width: 220px;
+  width: 180px; /* Ukuran kecil */
+  height: 180px; /* Samakan tinggi */
+  object-fit: cover; /* Biar proporsional */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
