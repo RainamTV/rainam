@@ -191,12 +191,12 @@ footer {
   padding: 3rem 1.5rem;
   max-width: 800px;
   margin: auto;
-  line-height: 1.9;
-  letter-spacing: 0.4px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
   text-align: justify;
   font-size: 1.05rem;
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #e6f0fa; /* biru muda lembut */
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
