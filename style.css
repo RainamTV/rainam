@@ -163,7 +163,7 @@ footer {
 /* PARALLAX BANNER */
 .hero-parallax {
   position: relative;
-  height: 60vh;
+  height: 30vh;
   overflow: hidden;
 }
 
