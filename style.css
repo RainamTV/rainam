@@ -303,3 +303,23 @@ body.dark-mode .sosial a:hover {
   background-color: #555;
   color: #fff;
 }
+/* Ubah background bagian 'tentang', 'media', 'galeri', 'musik', 'kisah', dan 'sapaan' saat dark mode */
+body.dark-mode .tentang,
+body.dark-mode .media,
+body.dark-mode .galeri,
+body.dark-mode .musik,
+body.dark-mode #kisah,
+body.dark-mode #sapaan {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Ubah warna background dan teks paragraf di dalamnya */
+body.dark-mode .tentang p,
+body.dark-mode .media p,
+body.dark-mode .galeri p,
+body.dark-mode .musik p,
+body.dark-mode #kisah p,
+body.dark-mode #sapaan p {
+  color: #ffffff;
+}
