@@ -274,3 +274,32 @@ body.dark-mode nav a:hover {
   background-color: #555;
   color: #fff;
 }
+/* Pastikan semua teks utama berubah jadi putih saat dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode .lagu p {
+  color: #ffffff;
+}
+
+/* Jika ada bagian dengan latar putih, sesuaikan juga */
+body.dark-mode .commentbox {
+  background-color: #1f1f1f !important;
+  color: #fff !important;
+}
+body.dark-mode .hero-content h2,
+body.dark-mode .hero-content p,
+body.dark-mode .sosial a {
+  color: #ffffff;
+}
+
+body.dark-mode .sosial a {
+  background-color: #333;
+}
+
+body.dark-mode .sosial a:hover {
+  background-color: #555;
+  color: #fff;
+}
