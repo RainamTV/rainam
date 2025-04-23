@@ -85,9 +85,27 @@
     </div>
   </section>
 
+<section id="kisah">
+  <h2>Ceritakan Kisahmu</h2>
+  <p>Bagikan kisah hidupmu yang mungkin bisa jadi inspirasi lagu dari Rainam.</p>
+  <div class="commentbox" data-project-id="5645457309040640-proj"></div>
+</section>
+
+<section id="sapaan">
+  <h2>Saling Sapa</h2>
+  <p>Yuk sapa Rainam dan pengunjung lainnya!</p>
+  <div class="commentbox" data-project-id="5667255945789440-proj"></div>
+</section>
+
   <footer>
     <p>&copy; 2025 Rainam. Semua hak dilindungi.</p>
   </footer>
+
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+  commentBox('5645457309040640-proj', { defaultBoxId: 'kisah' });
+  commentBox('5667255945789440-proj', { defaultBoxId: 'sapaan' });
+</script>
 
 <script>
   window.addEventListener('scroll', function() {
