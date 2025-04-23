@@ -200,3 +200,25 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 0.4rem 0.9rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e1ecff;
+  color: #000;
+}
