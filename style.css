@@ -323,3 +323,73 @@ body.dark-mode #kisah p,
 body.dark-mode #sapaan p {
   color: #ffffff;
 }
+/* General responsive layout */
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav a {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+body.dark-mode nav a:hover {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+body.dark-mode .tentang,
+body.dark-mode .media,
+body.dark-mode .galeri,
+body.dark-mode .musik,
+body.dark-mode #kisah,
+body.dark-mode #sapaan {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode .tentang p,
+body.dark-mode .media p,
+body.dark-mode .galeri p,
+body.dark-mode .musik p,
+body.dark-mode #kisah p,
+body.dark-mode #sapaan p {
+  color: #ffffff;
+}
+
+/* Tombol toggle dark mode */
+#darkModeToggle {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  display: block;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #333;
+}
