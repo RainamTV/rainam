@@ -200,20 +200,32 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #b2d8ff;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
 nav {
   display: flex;
-  justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
 }
 
 nav a {
   background-color: #ffffff;
   color: #1a1a1a;
-  padding: 0.4rem 0.9rem;
-  border-radius: 10px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
   text-decoration: none;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
