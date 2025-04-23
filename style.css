@@ -187,3 +187,11 @@ footer {
   transform: translateY(-50%);
   color: #111;
 }
+.tentang {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  text-align: justify;
+}
