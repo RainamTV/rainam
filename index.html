@@ -132,12 +132,14 @@ iframe.commentbox {
 <script>
   commentBox('5645457309040640-proj', {
     className: 'commentbox',
-    defaultBoxId: 'comment-kisah'
+    defaultBoxId: 'kisah',
+    theme: document.body.classList.contains('dark-mode') ? 'dark' : 'light'
   });
 
   commentBox('5639824694312960-proj', {
     className: 'commentbox',
-    defaultBoxId: 'comment-salam'
+    defaultBoxId: 'salam',
+    theme: document.body.classList.contains('dark-mode') ? 'dark' : 'light'
   });
 </script>
 
