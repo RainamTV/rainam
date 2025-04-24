@@ -130,7 +130,15 @@ iframe.commentbox {
 
 <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
 <script>
-  commentBox(); // Otomatis inisialisasi semua div.commentbox dengan data-project-id
+  commentBox('5645457309040640-proj', {
+    className: 'commentbox',
+    defaultBoxId: 'kisah'
+  });
+
+  commentBox('5639824694312960-proj', {
+    className: 'commentbox',
+    defaultBoxId: 'salam'
+  });
 </script>
 
 <script>
