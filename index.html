@@ -95,13 +95,13 @@
 <section id="kisah">
   <h2>Ceritakan Kisahmu</h2>
   <p>Bagikan kisah hidupmu yang mungkin bisa jadi inspirasi lagu dari Rainam.</p>
-  <div class="commentbox" data-project-id="5645457309040640-proj"></div>
+  <div id="comment-kisah" class="commentbox"></div>
 </section>
 
 <section id="salam">
   <h2>Saling Sapa</h2>
   <p>Yuk sapa Rainam dan pengunjung lainnya!</p>
-  <div class="commentbox" data-project-id="5639824694312960-proj"></div>
+  <div id="comment-salam" class="commentbox"></div>
 </section>
 
 <footer>
@@ -132,12 +132,12 @@ iframe.commentbox {
 <script>
   commentBox('5645457309040640-proj', {
     className: 'commentbox',
-    defaultBoxId: 'kisah'
+    defaultBoxId: 'comment-kisah'
   });
 
   commentBox('5639824694312960-proj', {
     className: 'commentbox',
-    defaultBoxId: 'salam'
+    defaultBoxId: 'comment-salam'
   });
 </script>
 
